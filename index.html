@@ -7,406 +7,159 @@
     <title>Document</title>
     <link rel="stylesheet" href="style.css">
     <style>
-        body {
-            margin: 0;
-            padding: 0;
-        }
+        /* responsive for mini screen */
         
-        h1 {
-            font-size: 60px;
-            font-weight: 800;
-            margin: 0px;
-            background: linear-gradient(180deg, #F948B2 0%, #8758F1 100%);
-            background-clip: text;
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-        }
-        /* nav-section */
-        
-        .nav-container {
-            display: flex;
-            justify-content: space-between;
-            width: 100%;
-            height: 90px;
-            /* border: 2px solid goldenrod; */
-            background: #FFF;
-            box-shadow: 0px 4px 30px 0px rgba(0, 0, 0, 0.05);
-        }
-        
-        .logo-container {
-            display: flex;
-            align-items: center;
-            margin-left: 200px;
-        }
-        
-        .header-span {
-            color: #FF42A5;
-        }
-        
-        .nav-list-container {
-            display: flex;
-            margin-right: 130px;
-            align-items: center;
-        }
-        
-        .common-heading {
-            text-align: center;
-            font-size: 2rem;
-            font-style: normal;
-            font-weight: 700;
-            line-height: normal;
-        }
-        
-        .logo-img {
-            width: 80px;
-            height: 30px;
-            padding-right: 15px;
-        }
-        
-        nav>div>ul {
-            display: flex;
-        }
-        
-        nav li {
-            list-style: none;
-            margin-right: 15px;
-            color: #3C354F;
-            text-align: center;
-            /* font-family: Work Sans; */
-            font-size: .8rem;
-            font-style: normal;
-            font-weight: 500;
-            line-height: normal;
-        }
-        
-        .nav-btn {
-            width: 200px;
-            height: 30px;
-            color: #3C354F;
-            text-align: center;
-            /* font-family: Work Sans; */
-            font-size: .6rem;
-            font-style: normal;
-            font-weight: 500;
-            line-height: normal;
-            border-radius: 4px;
-            background: rgba(11, 2, 35, 0.10);
-            padding-bottom: 2px;
-            border: none;
-        }
-        /* Play Like The G.O.A.T */
-        
-        .banner-text {
-            display: block;
-            align-items: center;
-            justify-content: center;
-            padding: 110px 210px;
-            background-image: url("images/group\ 114.png");
-            background-repeat: no-repeat;
-            background-size: contain;
-            background-size: cover;
-        }
-        
-        .banner-text-heading {
-            color: #0B0223;
-            font-size: 2.2rem;
-            font-weight: 600;
-            text-transform: uppercase;
-        }
-        
-        .banner-section {
-            display: flex;
-            justify-content: center;
-            width: 100%;
-            height: 500px;
-            margin: 0px;
-            padding: 0px;
-        }
-        
-        .btn-primary {
-            display: inline-flex;
-            padding: 13px 24px;
-            border: none;
-            border-radius: 40px;
-            background-color: #FF42A5;
-            color: #FFF;
-            font-size: .8rem;
-            font-style: normal;
-            font-weight: 600;
-            margin-right: 10px;
-        }
-        
-        .btn2 {
-            background-color: #4EC5F7;
-        }
-        
-        .btn3 {
-            margin-left: 250px;
-        }
-        
-        .banner-image {
-            width: 500px;
-            height: 100%;
-            /* padding-left: 40px; */
-            padding-right: 140px;
-        }
-        /* We are gamer section css */
-        
-        .gamer-section-contrainer {
-            display: flex;
-            align-items: center;
-            height: 500px;
-            width: 100%;
-            background: linear-gradient(90deg, rgba(255, 66, 165, 0.03) 0%, rgba(255, 66, 165, 0.03) 100%);
-            ;
-        }
-        
-        .gamer-image {
-            height: 390px;
-            width: 650px;
-            padding: 26px 26px 26px 120px;
-        }
-        
-        .gamer-text-section {
-            display: block;
-            justify-content: right;
-        }
-        
-        .common-header {
-            text-align: right;
-            font-size: 2.2rem;
-            font-weight: 700;
-            line-height: normal;
-            background: linear-gradient(180deg, #F948B2 0%, #8758F1 100%);
-            background-clip: text;
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-            margin-bottom: 10px;
-        }
-        
-        .primary-paragraph {
-            color: #534C64;
-            text-align: right;
-            font-size: .8rem;
-            font-style: normal;
-            font-weight: 400;
-            line-height: 22px;
-        }
-        
-        .ellipsis {
-            color: #534C64;
-            text-align: right;
-            font-size: 1rem;
-            font-style: normal;
-            font-weight: 500;
-            line-height: 25px;
-            /* 187.5% */
-        }
-        
-        .gamer-section-span {
-            text-align: right;
-            color: #534C64;
-            font-size: 1.2rem;
-            font-style: normal;
-            font-weight: 700;
-            line-height: 25px;
-        }
-        /* Online Games Funny Videos css */
-        
-        .online-games-container {
-            margin-top: 70px;
-        }
-        
-        .span-3 {
-            font-size: 2.2rem;
-            font-weight: 700;
-            line-height: normal;
-            background: linear-gradient(180deg, #141314 0%, #070708 100%);
-            background-clip: text;
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-        }
-        
-        .online-games-image {
-            display: flex;
-            justify-content: center;
-            margin-top: 30px;
-        }
-        
-        .collage-image {
-            width: 242px;
-            height: 300px;
-            margin-right: 10px;
-        }
-        
-        .common-header2,
-        .common-paragraph2 {
-            text-align: center;
-        }
-        
-        .common-para {
-            text-align: left;
-        }
-        /* 
-        Play Instantly,No Downloads  No Installs */
-        
-        .play-instant-container {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            gap: 140px;
-            margin-top: 70px;
-            height: 500px;
-        }
-        
-        .play-instantly-section-text {
-            padding-left: 220px;
-        }
-        
-        .play-instant-image {
-            width: 400px;
-            height: 420px;
-            border-radius: 4px;
-            margin-left: 100px;
-        }
-        
-        .bonus-image {
-            width: 220px;
-            height: 260px;
-            display: flex;
-            position: relative;
-            bottom: 175px;
-        }
-        
-        .play-instantly-section-image {
-            height: 500px;
-        }
-        /* category of game section css */
-        
-        .category-game-container {
-            display: grid;
-            grid-template-columns: repeat(5, 1fr);
-            margin-top: 90px;
-            margin-left: 150px;
-        }
-        
-        .collage-image2 {
-            display: flex;
-            gap: 10px;
-            margin-right: 15px;
-            color: #0B0223;
-            font-size: .9rem;
-            font-weight: 600;
-        }
-        
-        .collage-image2:hover {
-            border: 2px solid hotpink;
-            border-radius: 30px;
-            color: #F948B2;
-        }
-        
-        .category-game-container2 {
-            display: grid;
-            grid-template-columns: repeat(5, 1fr);
-            margin-top: 40px;
-            margin-left: 250px;
-        }
-        
-        .collage-image3 {
-            display: flex;
-            gap: 10px;
-            margin-right: 15px;
-            color: #0B0223;
-            font-size: .9rem;
-            font-weight: 600;
-        }
-        
-        .collage-image3:hover {
-            border: 2px solid hotpink;
-            border-radius: 30px;
-            color: #F948B2;
-        }
-        /* fotter section css */
-        
-        .fotter-container {
-            width: 100%;
-            height: 436px;
-            /* background-color: ; */
-            background: #0B0223;
-            padding-left: 80px;
-            text-align: center;
-            margin-top: 70px;
-        }
-        
-        .fotter-collage {
-            display: grid;
-            grid-template-columns: repeat(6, 1fr);
-            margin-top: 40px;
-            gap: 0px;
-        }
-        
-        .fotter-collage-text {
-            color: #FFF;
-            text-align: center;
-            /* font-family: Work Sans; */
-            font-size: .8rem;
-            /* font-style: normal; */
-            font-weight: 600;
-            /* line-height: normal; */
-            width: 80px;
-        }
-        
-        .fotter-icon-collage {
-            display: grid;
-            grid-template-columns: repeat(3, 1fr);
-            margin-top: 40px;
-        }
-        
-        .fotter-icon {
-            /* width: 24px;
-            height: 24px; */
-            /* flex-shrink: 0; */
-        }
-        
-        .fotter-last-text-container {
-            display: grid;
-            grid-template-columns: repeat(4, 1fr);
-            margin-top: 40px;
-            margin-bottom: 30px;
-        }
-        
-        .fotter-last-text {
-            color: rgba(255, 255, 255, 0.60);
-            text-align: center;
-            font-family: Work Sans;
-            font-size: .6rem;
-            font-style: normal;
-            font-weight: 500;
-            line-height: normal;
-            width: 120px;
-        }
-        
-        .span-4 {
-            color: white;
-        }
-        
-        .fotter-head {
-            display: flex;
-            justify-content: center;
-            margin-right: 300px;
-            padding-top: 80px;
-        }
-        
-        small {
-            text-align: center;
-            color: rgba(255, 255, 255, 0.60);
-            text-align: center;
-            /* font-family: Work Sans; */
-            font-size: .6rem;
-            font-style: normal;
-            font-weight: 500;
-            line-height: normal;
-            /* margin-top: 40px; */
+        @media screen and (max-width:576px) {
+            .nav-container,
+            .gamer-section-contrainer,
+            .online-games-image {
+                flex-direction: column;
+            }
+            .nav-list-container {
+                flex-direction: column;
+            }
+            nav>div>ul {
+                flex-direction: column;
+            }
+            .banner-section {
+                margin-top: 570px;
+                flex-direction: column;
+            }
+            .gamer-section-contrainer {
+                flex-direction: column;
+                margin-bottom: 440px;
+            }
+            .logo-container {
+                /* align-items: center; */
+                margin-left: 100px;
+            }
+            .nav-list-container {
+                margin-right: 10px;
+            }
+            .nav-container {
+                width: 100%;
+                height: 0px;
+            }
+            nav li {
+                padding-top: 30px;
+                padding-bottom: 20px;
+            }
+            .banner-text {
+                justify-content: center;
+                padding: 0;
+                padding-left: 50px;
+                margin: 0 20px;
+                padding-bottom: 30px;
+            }
+            .banner-image,
+            .gamer-image {
+                padding-right: 0;
+                height: 400px;
+                width: 377px;
+                margin: 0 50px;
+            }
+            .gamer-image {
+                padding-right: 0;
+                padding-top: 140px;
+                padding-left: 90px;
+                height: 380px;
+                width: 377px;
+                margin: 0 50px;
+            }
+            .gamer-text-section {
+                text-align: center;
+                /* padding-right: 100px; */
+            }
+            .online-games-container {
+                width: 350px;
+                margin-left: 60px;
+                margin-right: 0;
+            }
+            .primary-paragraph,
+            .common-header,
+            .gamer-section-span {
+                text-align: center;
+            }
+            .btn3 {
+                margin-left: 40px;
+            }
+            .online-games-image {
+                width: 270px;
+                justify-content: center;
+            }
+            .common-header,
+            .span-3 {
+                font-size: 1.6rem;
+            }
+            .collage-image {
+                padding-left: 30px;
+            }
+            .common-para {
+                text-align: center;
+            }
+            .play-instant-container {
+                flex-direction: column;
+                margin-top: 200px;
+                margin-bottom: 260px;
+                gap: 50px;
+            }
+            .category-game-container,
+            .category-game-container2 {
+                margin-top: 0px;
+                margin-left: 0px;
+            }
+            .play-instant-image {
+                width: 300px;
+                height: 320px;
+                margin-left: 50px;
+            }
+            .bonus-image {
+                width: 130px;
+                height: 180px;
+                display: flex;
+                position: relative;
+                bottom: 125px;
+            }
+            /* .category-game-container {
+                width: 350px;
+            } */
+            .collage-image2 {
+                /* display: flex; */
+                gap: 1px;
+                /* margin-right: 15px; */
+                color: #0B0223;
+                font-size: .5rem;
+                font-weight: 600;
+            }
+            .collage-image3 {
+                gap: 3px;
+                /* margin-right: 15px; */
+                color: #0B0223;
+                font-size: .56rem;
+                font-weight: 600;
+                padding-left: 20px;
+                /* padding-bottom: 10px; */
+            }
+            .play-instantly-section-text {
+                padding-left: 20px;
+            }
+            .fotter-container {
+                padding-left: 0px;
+            }
+            .category-image {
+                height: 20px;
+                width: 20px;
+            }
+            .fotter-head {
+                padding-left: 100px;
+            }
+            .fotter-collage-text {
+                color: #FFF;
+                text-align: center;
+                font-size: .6rem;
+                font-weight: 600;
+                width: 36px;
+            }
         }
     </style>
 </head>
@@ -547,42 +300,42 @@
         <!-- category of game section -->
         <section class="category-game-container ">
            <div class="collage-image2 ">
-            <img src="images/rectangle 141.png " alt=" ">
+            <img class="category-image " src="images/rectangle 141.png " alt=" ">
             <h4>Action Games</h4>
            </div>
            <div class="collage-image2 "  >
-            <img src="images/rectangle 124.png " alt=" ">
+            <img class="category-image " src="images/rectangle 124.png " alt=" ">
             <h4>Adventure Games</h4>
            </div>
            <div class="collage-image2 ">
-            <img src="images/rectangle 135.png " alt=" ">
+            <img class="category-image " src="images/rectangle 135.png " alt=" ">
             <h4>Arcade Games</h4>
            </div>
            <div class="collage-image2 ">
-            <img src="images/rectangle 154.png " alt=" ">
+            <img class="category-image " src="images/rectangle 154.png " alt=" ">
             <h4>Educational Games</h4>
            </div>
            <div class="collage-image2 ">
-            <img src="images/rectangle 165.png " alt=" ">
+            <img class="category-image " src="images/rectangle 165.png " alt=" ">
             <h4>Word Games</h4>
            </div>
         </section>
         <section class="category-game-container2 ">
             <div class="collage-image3 ">
-             <img src="images/rectangle 156.png " alt=" ">
-             <h4>Action Games</h4>
+             <img class="category-image " src="images/rectangle 156.png " alt=" ">
+             <h4>Role Palying Games</h4>
             </div>
             <div class="collage-image3 "  >
-             <img src="images/rectangle 187.png " alt=" ">
-             <h4>Adventure Games</h4>
+             <img class="category-image " src="images/rectangle 187.png " alt=" ">
+             <h4>Music & Audio Games</h4>
             </div>
             <div class="collage-image3 ">
-             <img src="images/rectangle 15.png " alt=" ">
-             <h4>Arcade Games</h4>
+             <img class="category-image " src="images/rectangle 15.png " alt=" ">
+             <h4>Puzzle Games</h4>
             </div>
             <div class="collage-image3 ">
-             <img src="images/rectangle 196.png " alt=" ">
-             <h4>Educational Games</h4>
+             <img class="category-image " src="images/rectangle 196.png " alt=" ">
+             <h4>Strategy Games</h4>
             </div>
             
          </section>

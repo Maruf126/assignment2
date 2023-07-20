@@ -297,7 +297,7 @@ Play Instantly,No Downloads  No Installs */
     display: grid;
     grid-template-columns: repeat(5, 1fr);
     margin-top: 90px;
-    margin-left: 150px;
+    margin-left: 130px;
 }
 
 .collage-image2 {
@@ -329,12 +329,20 @@ Play Instantly,No Downloads  No Installs */
     color: #0B0223;
     font-size: .9rem;
     font-weight: 600;
+    /* padding-bottom: 10px; */
 }
 
 .collage-image3:hover {
     border: 2px solid hotpink;
     border-radius: 30px;
     color: #F948B2;
+}
+
+.category-image {
+    height: 38px;
+    width: 38px;
+    padding-top: 6px;
+    padding-left: 8px;
 }
 
 
@@ -345,16 +353,26 @@ Play Instantly,No Downloads  No Installs */
     height: 436px;
     /* background-color: ; */
     background: #0B0223;
-    padding-left: 80px;
+    /* padding-left: 80px; */
     text-align: center;
     margin-top: 70px;
 }
 
-.fotter-collage {
+
+/* .fotter-collage {
     display: grid;
     grid-template-columns: repeat(6, 1fr);
     margin-top: 40px;
     gap: 0px;
+} */
+
+.fotter-collage {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(60px, 1fr));
+    margin-top: 40px;
+    gap: 30px;
+    justify-content: center;
+    margin-left: 370px;
 }
 
 .fotter-collage-text {
@@ -370,8 +388,10 @@ Play Instantly,No Downloads  No Installs */
 
 .fotter-icon-collage {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(auto-fill, minmax(80px, 1fr));
     margin-top: 40px;
+    gap: 40px;
+    margin-left: 450px;
 }
 
 .fotter-icon {
@@ -382,15 +402,16 @@ Play Instantly,No Downloads  No Installs */
 
 .fotter-last-text-container {
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(auto-fill, minmax(70px, 1fr));
     margin-top: 40px;
     margin-bottom: 30px;
+    gap: 37px;
+    margin-left: 400px;
 }
 
 .fotter-last-text {
     color: rgba(255, 255, 255, 0.60);
     text-align: center;
-    font-family: Work Sans;
     font-size: .6rem;
     font-style: normal;
     font-weight: 500;
